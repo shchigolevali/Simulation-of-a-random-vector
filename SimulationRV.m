@@ -57,18 +57,9 @@ for i=1:N
 end
 
 %Вывод графиков
-figure(1)
-plot(Xn,Yn,'.')
-hold on 
-x=0:0.01:10;
-y1=gampdf(x,8/3,1);
-plot(x,y1,'k')
-hold off
-grid on
-legend('Смоделированные с.в.','Плотность гамма-распределения')
 
 var=sort(Xn);
-figure(2)
+figure(1)
 ecdf(var);
 hold on 
 x2=0:0.01:10;
